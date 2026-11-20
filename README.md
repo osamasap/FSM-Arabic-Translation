@@ -1,33 +1,32 @@
-### FSM Arabic Translation
+# FSM Arabic Translation
 
-Arabic translations for the Field Service Management (Beveren FSM) app
+Arabic translation for the Field Service Management (Beveren FSM) app on
+ERPNext / Frappe v16.
 
-### Installation
+**Made for the Egyptian and Arab market.**
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+Made by Osama (osamasap) together with Muse.
+
+## What it covers
+
+106 Arabic strings for the FSM desk: Service Request, Service Quotation,
+Service Order, Service Appointment, Service Report, Service Technician,
+Service Type, Service Technician Skill, Service Area, AMC Contract, Repair
+Order, Repair Shipment, and the FSM settings and status values.
+
+The React dispatch page (`/schedule`) is a separate frontend and is not
+covered by Frappe translation files.
+
+## Install
 
 ```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch version-16
-bench install-app fsm_arabic_translation
+bench get-app https://github.com/osamasap/FSM-Arabic-Translation --branch main
+bench --site <your-site> install-app fsm_arabic_translation
 ```
 
-### Contributing
+Then set the user's language to Arabic (My Settings → Language) to see the
+Arabic interface.
 
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
+## License
 
-```bash
-cd apps/fsm_arabic_translation
-pre-commit install
-```
-
-Pre-commit is configured to use the following tools for checking and formatting your code:
-
-- ruff
-- eslint
-- prettier
-- pyupgrade
-
-### License
-
-mit
+MIT
